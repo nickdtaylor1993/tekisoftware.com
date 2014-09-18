@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+
+html,
+body {
+  min-height: 100%;
+}
+
+
+.bkground {
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  background:url('../img/Construction1.jpg') no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  /*margin-left: auto;
+  margin-right: auto;*/
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position:fixed;
+  top:5%;
+  width: 25em;
+  height: 25em;
+  background:url('../img/logo.png') no-repeat;
+  background-size: contain;
+
+}
+
+.memo {
+  position:fixed;
+  top: 20%;
+  width: 100%;
+  margin-top: 2%;
+  text-align:center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+}
+
+.signature {
+  position: fixed;
+  top:90%;
+  left: 80%;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+@media screen and (max-device-width: 1600px) {
+  .memo {
+    position:fixed;
+    top: 20%;
+    width: 100%;
+    text-align:center;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  html { background: url('../img/Construction1.jpg') #000 no-repeat center center fixed;
+  }
+  .memo {
+    position:fixed;
+    top: 20%;
+    width: 100%;
+    text-align:center;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'Lato', sans-serif;
+    font-size: .5em;
+  }
+  .bkground {
+    display: none;
+  }
+}
