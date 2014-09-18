@@ -70,7 +70,10 @@ body {
 }
 
 @media screen and (max-device-width: 800px) {
-  html { background: url('../img/Construction1.jpg') #000 no-repeat center center fixed;
+  html {
+    /*background: url('../img/Construction1.jpg') #000 no-repeat center center fixed;*/
+    background: url('../img/Construction1.jpg') #000 no-repeat;
+    background-size: contain;
   }
   .memo {
     position:fixed;
